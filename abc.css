@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.logoimg {
+    width: 80px;
+
+}
+
+.navItem {
+    display: flex;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.logotxt {
+    margin-left: -1.6rem;
+    font-size: 28px;
+}
+
+.navItem div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s;
+    /* color: black; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navItem div:hover a {
+    transition: all 0.8s;
+    font-weight: 600;
+}
+
+
+.hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    gap: 5rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+
+    max-width: 1200px;
+
+}
+
+.faded {
+    position: absolute;
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+    font-weight: 600;
+    bottom: -40%;
+    left: -12%;
+}
+
+.left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.head {
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.subhead {
+    font-size: 45px;
+    color: #343d68;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.role {
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+.desc {
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.btn {
+    width: 175px;
+
+    text-align: center;
+    background-color: #e84949;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transition: all 1s;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.absolute {
+    position: absolute;
+
+}
+
+.img {
+    position: relative;
+    padding: 2.5rem;
+    top: -1.2em;
+    left: -5.5em;
+    z-index: -1;
+
+    animation: img 5s linear infinite;
+    filter: grayscale(1);
+
+
+
+
+}
+
+@keyframes img {
+    0% {
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: grayscale(0);
+        transform: scale(0.9);
+        box-shadow: 5px 8px 20px 6px grey;
+    }
+
+    100% {
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+
+
+}
+
+.circle {
+
+    top: -1.5em;
+    right: 6em;
+    animation: circle 5s linear infinite;
+
+
+}
+
+@keyframes circle {
+    0% {
+        top: -1.5em;
+        right: 6em;
+    }
+
+    50% {
+        top: 0em;
+        right: 8em;
+    }
+
+    100% {
+        top: -1.5em;
+        right: 6em;
+    }
+
+}
+
+.zigzag {
+    bottom: 1em;
+    right: 23em;
+    animation: zigzag 5s linear infinite;
+}
+
+@keyframes zigzag {
+    0% {
+        bottom: 1em;
+        right: 23em;
+    }
+
+    50% {
+        right: 20em;
+    }
+
+    100% {
+        bottom: 1em;
+        right: 23em;
+    }
+}
+
+.cube {
+    top: -1.5em;
+    right: 25em;
+    animation: cube 5s linear infinite;
+}
+
+@keyframes cube {
+    0% {
+        top: -1.5em;
+        right: 25em;
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        top: -1.5em;
+        right: 25em;
+    }
+}
+
+.dots {
+    bottom: 1em;
+    right: 6em;
+    animation: dots 5s linear infinite;
+}
+
+@keyframes dots {
+    0% {
+        bottom: 1em;
+        right: 6em;
+    }
+
+    50% {
+        transform: translateY(-2em);
+    }
+
+    100% {
+        bottom: 1em;
+        right: 6em;
+    }
+}
+
+.plus {
+    top: -1.5em;
+    right: 15em;
+    rotate: 30deg;
+    animation: plus 5s linear infinite;
+}
+@keyframes plus {
+    0%{
+         top: -1.5em;
+        right: 15em;
+         rotate: 30deg;
+    }
+    50%{
+        /* transform: rotateZ('40deg') translateY(1em); */
+        rotate: 60deg;
+        transform: translateY(1em);
+
+    }
+    100%{
+        top: -1.5em;
+    right: 15em;
+    rotate: 30deg;
+    }
+    
+}
+.proj{
+   background-color: rgb(231, 231, 231); 
+   margin-top: 8rem;
+}
+.phead{
+    color: rgba(208, 45, 5, 0.856);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+}
+.pcontainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-image: url('portfolio-img/card1.webp');
+   object-fit: cover;
+   width: 900px;
+   height: 500px;
+    
+   
+   position: relative;
+   transition: all 1s;
+   box-shadow: 0px 0px 40px #1f1f1f;
+   margin: 5rem;
+}
+#p1{
+    
+    margin-right: 20rem;
+}
+#p2{
+    margin-left: 20rem;
+}
+.card:hover .pnum{
+      opacity: 1;
+}
+.pnum{
+    position: absolute;
+    font-size: 300px;
+    color: white;
+    top: -0.3em;
+    right: -0.1em;
+    transition: all 1s;
+    opacity: 0;
+    z-index: 1;
+}
+.pcontent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    margin-left: 4rem;
+    color: white;
+    opacity: 0;
+    transition: width 0.8s;
+   
+}
+.pskill{
+    max-width: 50%;
+    margin: 20px;
+    z-index: 1;
+}
+.cardhead{
+    font-size: 50px;
+    z-index: 1;
+    
+}
+.cardsubheading{
+    max-width: 50%;
+    margin: 2em;
+    z-index: 1;
+}
+.btn-group{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+}
+.card::before {
+    content: "";
+    background-color: rgb(61, 137, 230);
+    filter: opacity(50%);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 1;
+
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+    transition: all 1s;
+}
+.card:hover .pcontent{
+    opacity: 1;
+}
+.btn-group{
+    z-index: 1;
+}
+#p2{
+    background-image: url('portfolio-img/card2.png');
+    
+}
+#p3{
+    background-image: url('portfolio-img/card3.webp');
+    margin-right: 20rem;
+}
+#p4{
+    background-image: url('portfolio-img/card4.jpg');
+    margin-left: 20rem;
+}
+.skills{
+    display: flex;
+    max-width: 1200px;
+    margin: 10rem;
+    position: relative;
+    gap: 7rem;
+}
+.sleft{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 50%;
+}
+.big{
+    font-size: 100px;
+
+}
+.shead{
+    font-size: 50px;
+    color: #e84949;
+}
+.shape{
+    position: absolute;
+    width: 250px;
+    z-index: -1;
+    right: 15rem;
+    top: 15rem;
+    animation: shape 5s linear infinite;
+}
+@keyframes shape {
+    0%{
+       right: 15rem;
+       top: 15rem; 
+    }
+    50%{
+        transform: scale(1.1) translateX(1rem) ;
+        
+    }
+    100%{
+         right: 15rem;
+       top: 15rem;
+    }
+}
+.ssubhead{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 20px;
+    text-align:justify;
+}
+.sright{
+    margin-top: 10rem;
+    
+    max-width: 50%;
+    display: grid;
+    gap: 1rem;
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+.sfade{
+    position: absolute;
+    user-select: none;
+     color: rgb(231, 231, 231);
+     font-size: 300px;
+    top: 40rem;
+    right: -10rem;
+}
+.contact{
+    background-color: rgb(231, 231, 231);
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.chead{
+    font-size: 100px;
+    color: #e84949;
+    text-align: center;
+    margin-right: 5em;
+
+    
+}
+.csub{
+    font-size: 50px;
+    color: grey;
+    margin-left: 17rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 2rem;
+    margin-left:27rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+.field{
+    width:50rem;
+    padding: 1rem;
+    font-size: 20px;
+     box-shadow: 2px 2px 10px #1f1f1f;
+     border-radius: 5px;
+     font-weight: 500;
+    border: none;
+}
+.textarea{
+    border: none;
+    height: auto;
+}
+#submit{
+    border: none;
+    
+    font-size: 20px;
+    width: 270px;
+    display: flex;
+    justify-content: baseline;
+    
+    
+}
+.sub{
+    margin-left: 1rem;
+}
+.footer{
+    background-color: #211d5a;
+    color: white;
+}
+.fleft a{
+    color: white;
+}
+.fcontainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 250px;
+    padding-top: 5rem;
+}
+.ffade{
+    user-select: none;
+    position: absolute;
+    font-size: 100px;
+    color: #4e45d5;
+    bottom: -1rem;
+}
+.fleft{
+    display: flex;
+    gap: 2rem;
+    margin-left: 30rem;
+}
+.fright{
+    display: flex;
+    gap: 10px;
+    margin-right: 3rem;
+}
+@media (max-width: 768px) {
+  .container,
+  .hero,
+  .skills {
+    width: 90%;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .navItem {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .logoimg {
+    width: 60px;
+  }
+
+  .logotxt {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  .right {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .img {
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+
+  .faded {
+    display: none;
+  }
+
+  .proj {
+    margin-top: 4rem;
+  }
+
+  .phead {
+    font-size: 50px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p1,
+  #p2,
+  #p3,
+  #p4 {
+    margin: 0 auto !important;
+  }
+
+  .pcontent {
+    margin: 3em 2rem;
+  }
+
+  .pnum {
+    font-size: 150px;
+    top: 0;
+    right: 0;
+  }
+
+  .skills {
+    flex-direction: column;
+    margin: 3rem 1rem;
+    gap: 3rem;
+  }
+
+  .sleft,
+  .sright {
+    max-width: 100%;
+  }
+
+  .shead {
+    font-size: 35px;
+  }
+
+  .big {
+    font-size: 60px;
+  }
+
+  .sright {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
+
+  .shape,
+  .sfade {
+    display: none;
+  }
+
+  .contact {
+    margin-top: 5rem;
+  }
+
+  .chead {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .csub {
+    font-size: 20px;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .form {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  #submit {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .fcontainer {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .fleft,
+  .fright {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .ffade {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .proj {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+
+  .phead {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  .pcontainer {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0 !important;
+  }
+
+  .pcontent {
+    margin: 3em 1.5rem;
+  }
+
+  .pskill {
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .cardhead {
+    font-size: 28px;
+  }
+
+  .cardsubheading {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  .btn-group {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .pnum {
+    font-size: 120px;
+    top: 0;
+    right: 0;
+  }
+
+  #p1,
+  #p2,
+  #p3,
+  #p4 {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .circle,
+  .cube,
+  .dots,
+  .zigzag,
+  .plus,
+  .shape {
+    display: none !important;
+  }
+}

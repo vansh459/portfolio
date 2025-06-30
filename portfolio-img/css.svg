@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer blue shield -->
+  <path fill="#264DE4" d="M71,460L30,0H482L441,460L256,512" />
+  
+  <!-- Inner lighter blue highlight -->
+  <path fill="#2965F1" d="M256,480l149-41L438,37H256" />
+  
+  <!-- Light gray shapes (inner elements) -->
+  <path fill="#EBEBEB" d="M256,208H154l5,46h97v-46zM256,118H149l4,46h103v-46zM256,361l-0.2,0L206,348l-3-36h-45l6,72l92,25h0.2" />
+  
+  <!-- White shapes (top layers) -->
+  <path fill="#FFFFFF" d="M256,208v46h87l-8,89l-79,22v49l128-36l17-193H256zM256,118v46h97l4-46H256z" />
+</svg>

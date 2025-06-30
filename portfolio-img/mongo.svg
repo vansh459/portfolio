@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf icon -->
+  <path fill="#10AA50" d="M50 10C50 10 55 25 55 40C55 55 50 70 50 70C50 70 45 55 45 40C45 25 50 10 50 10Z"/>
+  <path fill="#12924F" d="M50 10C50 10 52 27 52 40C52 53 50 70 50 70C50 70 48 53 48 40C48 27 50 10 50 10Z"/>
+  
+  <!-- MongoDB text -->
+  <text x="70" y="55" font-family="Georgia, serif" font-size="32" fill="#001E2B">Mongo</text>
+  <text x="155" y="55" font-family="Georgia, serif" font-size="32" fill="#10AA50">DB</text>
+</svg>
